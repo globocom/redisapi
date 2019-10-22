@@ -1,11 +1,11 @@
-#redisapi
+# redisapi
 
 [![Build Status](https://travis-ci.org/tsuru/redisapi.png?branch=master)](https://travis-ci.org/tsuru/redisapi)
 
 This API exposes a Redis service to application developers using [tsuru
 PaaS](http://tsuru.io).
 
-##Installation
+## Installation
 
 The `redisapi` uses `mongodb` to store data about redis instances, and uses `docker` to spawn redis instances.
 
@@ -13,7 +13,7 @@ To install the api, all you need is a machine with `python` and `pip` installed.
 
     pip install -r requirements.txt
 
-##Configuration
+## Configuration
 
 This API is ready to be deployed as a tsuru application. It depends on the
 following environment variables:
@@ -32,7 +32,7 @@ following environment variables:
   public API is delivered to apps whenever tsuru binds it to a service
   instance. _Default value:_ the value of ``$REDIS_SERVER_HOST``.
 
-##Healthchecker
+## Healthchecker
 
 The `redisapi` has a module that creates healthcheckers for the redis instances created by the api. By default
 the healthchecker is disabled. To enable it you should set the environment variable `HEALTH_CHECKER` with the
